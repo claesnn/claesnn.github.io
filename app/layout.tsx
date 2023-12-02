@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body className={inter.className + "min-h-screen pb-12"}>
         <header>
           <div className='border-b'>
             <header className='p-5 max-w-6xl mx-auto flex'>
@@ -38,6 +38,15 @@ export default function RootLayout({
           </div>
         </header>
         <main className='max-w-6xl mx-auto p-5'>{children}</main>
+        <footer className='border-t bottom-0 absolute h-12 w-full'>
+          <div className='max-w-6xl mx-auto py-2'>
+            <p>
+              Made by Claes Nymand Nilsson with{" "}
+              <a href='https://nextjs.org/'>Next.js</a> &{" "}
+              <a href='https://tailwindcss.com/'>Tailwind CSS</a>
+            </p>
+          </div>
+        </footer>
       </body>
     </html>
   )
