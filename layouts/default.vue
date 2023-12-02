@@ -5,10 +5,10 @@
       <span class="mr-10 text-xl font-bold">ClaesNN</span>
       <nav class="space-x-4">
         <NuxtLink to="/">bio</NuxtLink>
-        <NuxtLink href="/photography">photography</NuxtLink>
-        <NuxtLink href="/projects">projects</NuxtLink>
-        <NuxtLink href="/blog">blog</NuxtLink>
-        <NuxtLink href="/contact">contact</NuxtLink>
+        <NuxtLink href="/photography/">photography</NuxtLink>
+        <NuxtLink href="/projects/">projects</NuxtLink>
+        <NuxtLink href="/blog/">blog</NuxtLink>
+        <NuxtLink href="/contact/">contact</NuxtLink>
       </nav>
     </header>
   </div>
