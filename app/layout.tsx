@@ -8,21 +8,28 @@ export const metadata: Metadata = {
   description: "Personal website of Claes Nymand Nilsson",
 }
 
+const literata = Literata({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] })
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  const literata = Literata({ subsets: ["latin"] })
-  const inter = Inter({ subsets: ["latin"] })
-
   return (
     <html lang='en'>
-      <Navigation
-        children={children}
-        literata={literata}
-        inter={inter}
-      />
+      <body className={inter.className + " min-h-screen pb-12 "}>
+        <Navigation literata={literata} />
+        <main className='max-w-6xl mx-auto p-5'>{children}</main>
+        <footer className='border-t bottom-0 absolute h-12 w-full'>
+          <div className='max-w-6xl mx-auto py-2 px-5'>
+            <p>
+              Made by Claes Nymand Nilsson with{" "}
+              <a href='https://nextjs.org/'>Next.js</a>
+            </p>
+          </div>
+        </footer>
+      </body>
     </html>
   )
 }
