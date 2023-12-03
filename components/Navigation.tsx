@@ -20,13 +20,18 @@ export default function Navigation({ literata }: { literata: NextFont }) {
     setOpen(!open)
   }
 
+  const closeMenu = () => {
+    document.body.style.overflow = "visible"
+    setOpen(false)
+  }
+
   return (
     <>
       <div className={`border-b`}>
         <header className='p-5 max-w-6xl mx-auto flex items-center flex-wrap space-y-3'>
           <div className='mr-8'>
             <Link
-              onClick={() => setOpen(false)}
+              onClick={closeMenu}
               href='/'>
               <h1 className={literata.className + " text-4xl font-bold"}>
                 Claes Nymand Nilsson
@@ -53,7 +58,7 @@ export default function Navigation({ literata }: { literata: NextFont }) {
           <div className='flex items-center'>
             <div className='flex'>
               <div
-                onClick={() => toggleOpen()}
+                onClick={toggleOpen}
                 className='lg:hidden'>
                 <div className='grid place-content-center w-12 h-12 mx-auto cursor-pointer'>
                   <div
@@ -96,42 +101,42 @@ export default function Navigation({ literata }: { literata: NextFont }) {
         <div className='flex flex-col h-full p-5'>
           <Link href='/about'>
             <Button
-              onClick={() => setOpen(false)}
+              onClick={closeMenu}
               variant='ghost'>
               About
             </Button>
           </Link>
           <Link href='/projects'>
             <Button
-              onClick={() => setOpen(false)}
+              onClick={closeMenu}
               variant='ghost'>
               Projects
             </Button>
           </Link>
           <Link href='/photography'>
             <Button
-              onClick={() => setOpen(false)}
+              onClick={closeMenu}
               variant='ghost'>
               Photography
             </Button>
           </Link>
           <Link href='/contact'>
             <Button
-              onClick={() => setOpen(false)}
+              onClick={closeMenu}
               variant='ghost'>
               Contact
             </Button>
           </Link>
           <Link href='https://github.com/claesnn'>
             <Button
-              onClick={() => setOpen(false)}
+              onClick={closeMenu}
               variant='ghost'>
               <Github />
             </Button>
           </Link>
           <Link href='https://linkedin.com/in/claesnn'>
             <Button
-              onClick={() => setOpen(false)}
+              onClick={closeMenu}
               variant='ghost'>
               <LinkedinIcon />
             </Button>
