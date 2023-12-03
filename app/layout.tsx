@@ -21,14 +21,14 @@ export default function RootLayout({
       <body className={inter.className + "min-h-screen pb-12"}>
         <header>
           <div className='border-b'>
-            <header className='p-5 max-w-6xl mx-auto flex items-center justify-between'>
+            <header className='p-5 max-w-6xl mx-auto flex items-center justify-between flex-wrap space-y-3'>
               <div>
                 <h1 className={literata.className + " text-4xl font-bold"}>
                   Claes Nymand Nilsson
                 </h1>
                 <p className='text-2xl'>Biotech & Software</p>
               </div>
-              <nav className='space-x-4 flex'>
+              <nav className='space-x-4'>
                 <Link href='/'>Home</Link>
                 <Link href='/about'>About</Link>
                 <Link href='/projects'>Projects</Link>
