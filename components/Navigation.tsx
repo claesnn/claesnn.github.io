@@ -29,14 +29,14 @@ export default function Navigation({ literata }: { literata: NextFont }) {
     <>
       <div className={`border-b`}>
         <header className='p-5 max-w-6xl mx-auto flex items-center flex-wrap space-y-3'>
-          <div className='mr-8'>
+          <div className='mr-10'>
             <Link
               onClick={closeMenu}
               href='/'>
-              <h1 className={literata.className + " text-4xl font-bold"}>
+              <h1 className={literata.className + " text-2xl font-bold"}>
                 Claes Nymand Nilsson
               </h1>
-              <p className='text-2xl'>Biotech & Software</p>
+              <p className='text-lg'>Biotech & Software</p>
             </Link>
           </div>
           <div className='flex justify-between flex-grow'>
