@@ -4,8 +4,8 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Github, LinkedinIcon } from "lucide-react"
 import { Literata, Inter } from "next/font/google"
-import { useState, useEffect } from "react"
-import { usePathname } from "next/navigation"
+import { useState } from "react"
+import "@/app/layout.css"
 
 const literata = Literata({ subsets: ["latin"] })
 const inter = Inter({ subsets: ["latin"] })
@@ -15,12 +15,7 @@ export default function Navigation({
 }: {
   children: React.ReactNode
 }) {
-  const pathName = usePathname()
   const [open, setOpen] = useState(false)
-
-  useEffect(() => {
-    setOpen(false)
-  }, [pathName])
 
   const overflowHidden = open ? "overflow-hidden" : ""
 
@@ -37,7 +32,7 @@ export default function Navigation({
             </Link>
           </div>
           <div className='flex justify-between flex-grow'>
-            <nav>
+            <nav className='hidden lg:block'>
               <Link href='/about'>
                 <Button variant='ghost'>About</Button>
               </Link>
@@ -51,28 +46,43 @@ export default function Navigation({
                 <Button variant='ghost'>Contact</Button>
               </Link>
             </nav>
+          </div>
+          <div className='flex items-center'>
             <div className='flex'>
               <div
                 onClick={() => setOpen(!open)}
-                className='dropdown'>
-                <span className='hamburger'>
-                  xxxx
-                  {open ? "close" : "open"}
-                  <span className='icon-bar top-bar'></span>
-                  <span className='icon-bar middle-bar'></span>
-                  <span className='icon-bar bottom-bar'></span>
-                </span>
+                className='lg:hidden'>
+                <div className='grid place-content-center w-12 h-12 mx-auto cursor-pointer'>
+                  <div
+                    className={`w-8 rounded-full transition-all duration-150 before:content-[''] before:absolute before:w-8 before:h-0.5 before:bg-slate-800 before:rounded-full
+                    before:transition-all
+                    before:duration-150
+                    after:content-['']
+                    after:absolute
+                    after:w-8
+                    after:h-0.5
+                    after:bg-slate-800
+                    after:rounded-full
+                    after:transition-all
+                    after:duration-150 ${
+                      open
+                        ? "h-0 bg-white before:translate-y-0 before:rotate-45 after:translate-y-0 after:-rotate-45"
+                        : "h-0.5 bg-slate-800 before:-translate-y-1 after:translate-y-1"
+                    }`}></div>
+                </div>
               </div>
-              <Link href='https://github.com/claesnn'>
-                <Button variant='ghost'>
-                  <Github />
-                </Button>
-              </Link>
-              <Link href='https://linkedin.com/in/claesnn'>
-                <Button variant='ghost'>
-                  <LinkedinIcon />
-                </Button>
-              </Link>
+              <div className='hidden lg:block'>
+                <Link href='https://github.com/claesnn'>
+                  <Button variant='ghost'>
+                    <Github />
+                  </Button>
+                </Link>
+                <Link href='https://linkedin.com/in/claesnn'>
+                  <Button variant='ghost'>
+                    <LinkedinIcon />
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </header>
@@ -107,6 +117,20 @@ export default function Navigation({
               onClick={() => setOpen(false)}
               variant='ghost'>
               Contact
+            </Button>
+          </Link>
+          <Link href='https://github.com/claesnn'>
+            <Button
+              onClick={() => setOpen(false)}
+              variant='ghost'>
+              <Github />
+            </Button>
+          </Link>
+          <Link href='https://linkedin.com/in/claesnn'>
+            <Button
+              onClick={() => setOpen(false)}
+              variant='ghost'>
+              <LinkedinIcon />
             </Button>
           </Link>
         </div>
