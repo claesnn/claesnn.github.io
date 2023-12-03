@@ -28,7 +28,7 @@ export default function Navigation({ literata }: { literata: NextFont }) {
   return (
     <>
       <div className={`border-b`}>
-        <header className='p-5 max-w-6xl mx-auto flex items-center flex-wrap space-y-3'>
+        <header className='p-5 max-w-7xl mx-auto flex items-center flex-wrap space-y-3'>
           <div className='lg:mr-10'>
             <Link
               onClick={closeMenu}

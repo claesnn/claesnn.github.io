@@ -20,9 +20,9 @@ export default function RootLayout({
     <html lang='en'>
       <body className={inter.className + " min-h-screen pb-12 "}>
         <Navigation literata={literata} />
-        <main className='max-w-6xl mx-auto p-5'>{children}</main>
+        <main className='max-w-7xl mx-auto p-5'>{children}</main>
         <footer className='border-t bottom-0 absolute h-12 w-full'>
-          <div className='max-w-6xl mx-auto py-2 px-5'>
+          <div className='max-w-7xl mx-auto py-2 px-5'>
             <p>
               Made by Claes Nymand Nilsson with{" "}
               <a href='https://nextjs.org/'>Next.js</a>
