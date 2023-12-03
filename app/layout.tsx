@@ -42,8 +42,7 @@ export default function RootLayout({
           <div className='max-w-6xl mx-auto py-2 px-5'>
             <p>
               Made by Claes Nymand Nilsson with{" "}
-              <a href='https://nextjs.org/'>Next.js</a> &{" "}
-              <a href='https://tailwindcss.com/'>Tailwind CSS</a>
+              <a href='https://nextjs.org/'>Next.js</a>
             </p>
           </div>
         </footer>
