@@ -3,17 +3,18 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Github, LinkedinIcon } from "lucide-react"
-import { Literata, Inter } from "next/font/google"
 import { useState } from "react"
+import { NextFont } from "next/dist/compiled/@next/font"
 import "@/app/layout.css"
-
-const literata = Literata({ subsets: ["latin"] })
-const inter = Inter({ subsets: ["latin"] })
 
 export default function Navigation({
   children,
+  literata,
+  inter,
 }: {
   children: React.ReactNode
+  literata: NextFont
+  inter: NextFont
 }) {
   const [open, setOpen] = useState(false)
 
@@ -120,16 +121,12 @@ export default function Navigation({
             </Button>
           </Link>
           <Link href='https://github.com/claesnn'>
-            <Button
-              onClick={() => setOpen(false)}
-              variant='ghost'>
+            <Button variant='ghost'>
               <Github />
             </Button>
           </Link>
           <Link href='https://linkedin.com/in/claesnn'>
-            <Button
-              onClick={() => setOpen(false)}
-              variant='ghost'>
+            <Button variant='ghost'>
               <LinkedinIcon />
             </Button>
           </Link>
