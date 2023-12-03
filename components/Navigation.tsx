@@ -3,36 +3,33 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Github, LinkedinIcon } from "lucide-react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { NextFont } from "next/dist/compiled/@next/font"
+import { usePathname } from "next/navigation"
 import "@/app/layout.css"
 
 export default function Navigation({ literata }: { literata: NextFont }) {
   const [open, setOpen] = useState(false)
+  const pathname = usePathname()
 
   const toggleOpen = () => {
-    if (open) {
-      document.body.style.overflow = "visible"
-    } else {
-      document.body.style.overflow = "hidden"
-    }
-
     setOpen(!open)
   }
 
   const closeMenu = () => {
-    document.body.style.overflow = "visible"
     setOpen(false)
   }
+
+  useEffect(() => {
+    closeMenu()
+  }, [pathname])
 
   return (
     <>
       <div className={`border-b`}>
         <header className='p-5 max-w-6xl mx-auto flex items-center flex-wrap space-y-3'>
           <div className='mr-8'>
-            <Link
-              onClick={closeMenu}
-              href='/'>
+            <Link href='/'>
               <h1 className={literata.className + " text-4xl font-bold"}>
                 Claes Nymand Nilsson
               </h1>
@@ -100,44 +97,24 @@ export default function Navigation({ literata }: { literata: NextFont }) {
         id='side-menu'>
         <div className='flex flex-col h-full p-5'>
           <Link href='/about'>
-            <Button
-              onClick={closeMenu}
-              variant='ghost'>
-              About
-            </Button>
+            <Button variant='ghost'>About</Button>
           </Link>
           <Link href='/projects'>
-            <Button
-              onClick={closeMenu}
-              variant='ghost'>
-              Projects
-            </Button>
+            <Button variant='ghost'>Projects</Button>
           </Link>
           <Link href='/photography'>
-            <Button
-              onClick={closeMenu}
-              variant='ghost'>
-              Photography
-            </Button>
+            <Button variant='ghost'>Photography</Button>
           </Link>
           <Link href='/contact'>
-            <Button
-              onClick={closeMenu}
-              variant='ghost'>
-              Contact
-            </Button>
+            <Button variant='ghost'>Contact</Button>
           </Link>
           <Link href='https://github.com/claesnn'>
-            <Button
-              onClick={closeMenu}
-              variant='ghost'>
+            <Button variant='ghost'>
               <Github />
             </Button>
           </Link>
           <Link href='https://linkedin.com/in/claesnn'>
-            <Button
-              onClick={closeMenu}
-              variant='ghost'>
+            <Button variant='ghost'>
               <LinkedinIcon />
             </Button>
           </Link>
