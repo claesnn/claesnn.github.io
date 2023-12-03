@@ -39,7 +39,7 @@ export default function RootLayout({
         </header>
         <main className='max-w-6xl mx-auto p-5'>{children}</main>
         <footer className='border-t bottom-0 absolute h-12 w-full'>
-          <div className='max-w-6xl mx-auto py-2'>
+          <div className='max-w-6xl mx-auto py-2 px-5'>
             <p>
               Made by Claes Nymand Nilsson with{" "}
               <a href='https://nextjs.org/'>Next.js</a> &{" "}
