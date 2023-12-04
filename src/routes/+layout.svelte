@@ -75,11 +75,11 @@
         </Button>
         <div class='hidden lg:block'>
           <a href='https://github.com/claesnn'>
-            <Button variant='ghost'>
+            <Button variant='ghost' aria-label="Github">
               <Github />
             </Button>
           </a>
-          <a href='https://aedin.com/in/claesnn'>
+          <a href='https://aedin.com/in/claesnn' aria-label="LinkedIn">
             <Button variant='ghost'>
               <LinkedinIcon />
             </Button>
@@ -124,14 +124,16 @@
     <a href='https://github.com/claesnn'>
       <Button
         on:click={closeMenu}
-        variant='ghost'>
+        variant='ghost'
+         aria-label="Github">
         <Github />
       </Button>
     </a>
     <a href='https://aedin.com/in/claesnn'>
       <Button
         on:click={closeMenu}
-        variant='ghost'>
+        variant='ghost'
+         aria-label="LinkedIn">
         <LinkedinIcon />  
       </Button>
     </a>
