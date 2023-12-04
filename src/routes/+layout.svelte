@@ -46,8 +46,9 @@
     </div>
     <div class='flex items-center'>
       <div class='flex'>
-        <a
-          href={undefined}
+        <Button variant='ghost'
+          type='button'
+          aria-expanded={open}
           on:click={toggleOpen}
           class='lg:hidden'
           >
@@ -55,6 +56,7 @@
             <div
               class={`w-8 rounded-full transition-all duration-150 before:content-[''] before:absolute before:w-8 before:h-0.5 before:bg-slate-800 before:rounded-full
               before:transition-all
+              before:-translate-x-4
               before:duration-150
               after:content-['']
               after:absolute
@@ -62,6 +64,7 @@
               after:h-0.5
               after:bg-slate-800
               after:rounded-full
+              after:-translate-x-4
               after:transition-all
               after:duration-150 ${
                 open
@@ -69,7 +72,7 @@
                   : "h-0.5 bg-slate-800 before:-translate-y-1 after:translate-y-1"
               }`}></div>
           </div>
-        </a>
+        </Button>
         <div class='hidden lg:block'>
           <a href='https://github.com/claesnn'>
             <Button variant='ghost'>
