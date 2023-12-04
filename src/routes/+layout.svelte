@@ -80,8 +80,8 @@
               <Github />
             </Button>
           </a>
-          <a href='https://aedin.com/in/claesnn' aria-label="LinkedIn">
-            <Button variant='ghost'>
+          <a href='https://aedin.com/in/claesnn'>
+            <Button variant='ghost'  aria-label="LinkedIn">
               <LinkedinIcon />
             </Button>
           </a>
