@@ -7,12 +7,10 @@
 
   const toggleOpen = () => {
     open = !open;
-    document.body.style.overflow = open ? "hidden" : "auto";
   };
 
   const closeMenu = () => {
     open = false;
-    document.body.style.overflow = "auto";
   };
 </script>
 
