@@ -4,9 +4,9 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Github, LinkedinIcon } from "lucide-react"
 import { useState } from "react"
-import { NextFont } from "next/dist/compiled/@next/font"
+import { literata } from "@/app/fonts"
 
-export default function Navigation({ literata }: { literata: NextFont }) {
+export default function Navigation() {
   const [open, setOpen] = useState(false)
 
   const toggleOpen = () => {
