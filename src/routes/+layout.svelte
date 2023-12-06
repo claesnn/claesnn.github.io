@@ -48,7 +48,6 @@
       <div class='flex'>
         <Button variant='ghost'
           type='button'
-          aria-label="Open menu"
           aria-expanded={open}
           on:click={toggleOpen}
           class='lg:hidden'
