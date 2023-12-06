@@ -1,7 +1,7 @@
 <script>
   import "../app.css";
   import Button from "$lib/components/ui/button/button.svelte";
-  import { Github, Link, LinkedinIcon } from 'lucide-svelte'
+  import { Github, LinkedinIcon } from 'lucide-svelte'
 
   let open = false;
 
