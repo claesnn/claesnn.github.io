@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button"
 import { Github, LinkedinIcon } from "lucide-react"
 import { useState } from "react"
 import { NextFont } from "next/dist/compiled/@next/font"
-import "@/app/layout.css"
 
 export default function Navigation({ literata }: { literata: NextFont }) {
   const [open, setOpen] = useState(false)
