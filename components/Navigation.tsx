@@ -57,6 +57,7 @@ export default function Navigation({ literata }: { literata: NextFont }) {
           <div className='flex items-center'>
             <div className='flex'>
               <div
+                aria-label='Open menu'
                 onClick={toggleOpen}
                 className='lg:hidden'>
                 <div className='grid place-content-center w-12 h-12 mx-auto cursor-pointer'>
@@ -80,12 +81,16 @@ export default function Navigation({ literata }: { literata: NextFont }) {
               </div>
               <div className='hidden lg:block'>
                 <Link href='https://github.com/claesnn'>
-                  <Button variant='ghost'>
+                  <Button
+                    variant='ghost'
+                    aria-label='Github'>
                     <Github />
                   </Button>
                 </Link>
                 <Link href='https://linkedin.com/in/claesnn'>
-                  <Button variant='ghost'>
+                  <Button
+                    variant='ghost'
+                    aria-label='LinkedIn'>
                     <LinkedinIcon />
                   </Button>
                 </Link>
@@ -129,6 +134,7 @@ export default function Navigation({ literata }: { literata: NextFont }) {
           <Link href='https://github.com/claesnn'>
             <Button
               onClick={closeMenu}
+              aria-label='Github'
               variant='ghost'>
               <Github />
             </Button>
@@ -136,6 +142,7 @@ export default function Navigation({ literata }: { literata: NextFont }) {
           <Link href='https://linkedin.com/in/claesnn'>
             <Button
               onClick={closeMenu}
+              aria-label='LinkedIn'
               variant='ghost'>
               <LinkedinIcon />
             </Button>
