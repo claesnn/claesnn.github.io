@@ -32,7 +32,7 @@ import HelloWorld from "./components/HelloWorld.vue"
 @font-face {
   font-family: "Hedvig";
   src: local("Hedvig"), url("./assets/Hedvig.ttf") format("truetype");
-  font-display: swap;
+  font-display: auto;
 }
 </style>
 
