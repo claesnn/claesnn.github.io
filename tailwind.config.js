@@ -5,7 +5,7 @@ export default {
     extend: {},
     fontFamily: {
       literata: ["Literata Variable", "serif"],
-      inter: ["Inter", "sans-serif"],
+      inter: ["Inter Variable", "sans-serif"],
     },
   },
   plugins: [],
