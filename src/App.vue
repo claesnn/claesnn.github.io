@@ -31,9 +31,7 @@ import HelloWorld from "./components/HelloWorld.vue"
 <style>
 @font-face {
   font-family: "Hedvig";
-  src: local("Hedvig"),
-    url("./assets/HedvigLettersSerif-Regular-VariableFont_opsz.ttf")
-      format("truetype");
+  src: local("Hedvig"), url("./assets/Hedvig.ttf") format("truetype");
   font-display: swap;
 }
 </style>
