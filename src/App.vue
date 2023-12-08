@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router"
 import HelloWorld from "./components/HelloWorld.vue"
+import "@fontsource/inter"
+import "@fontsource-variable/literata"
 </script>
 
 <template>
@@ -14,7 +16,7 @@ import HelloWorld from "./components/HelloWorld.vue"
         height="125" />
 
       <div class="wrapper">
-        <h1 class="font-hedvig text-6xl font-bold antialiased">
+        <h1 class="font-literata text-6xl antialiased">
           Vue 3 + Vite + TypeScript
         </h1>
         <HelloWorld msg="You did it!" />
@@ -29,20 +31,6 @@ import HelloWorld from "./components/HelloWorld.vue"
     <RouterView />
   </div>
 </template>
-
-<style>
-@font-face {
-  font-family: "Hedvig";
-  src: local("Hedvig"), url("./assets/Hedvig.ttf") format("truetype");
-  font-display: auto;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: local("Inter"), url("./assets/Inter-Regular.ttf") format("truetype");
-  font-display: auto;
-}
-</style>
 
 <style scoped>
 header {
