@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router"
 import HelloWorld from "./components/HelloWorld.vue"
-import "@fontsource/inter"
+import "@fontsource-variable/inter"
 import "@fontsource-variable/literata"
 </script>
 
