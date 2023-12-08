@@ -1,13 +1,21 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterLink, RouterView } from "vue-router"
+import HelloWorld from "./components/HelloWorld.vue"
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img
+      alt="Vue logo"
+      class="logo"
+      src="@/assets/logo.svg"
+      width="125"
+      height="125" />
 
     <div class="wrapper">
+      <h1 class="font-hedvig text-6xl font-bold antialiased">
+        Vue 3 + Vite + TypeScript
+      </h1>
       <HelloWorld msg="You did it!" />
 
       <nav>
@@ -19,6 +27,15 @@ import HelloWorld from './components/HelloWorld.vue'
 
   <RouterView />
 </template>
+
+<style>
+@font-face {
+  font-family: "Hedvig";
+  src: local("Hedvig"),
+    url("./assets/HedvigLettersSerif-Regular-VariableFont_opsz.ttf")
+      format("truetype");
+}
+</style>
 
 <style scoped>
 header {
