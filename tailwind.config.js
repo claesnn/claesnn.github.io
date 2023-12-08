@@ -5,6 +5,7 @@ export default {
     extend: {},
     fontFamily: {
       hedvig: ["Hedvig", "serif"],
+      inter: ["Inter", "sans-serif"],
     },
   },
   plugins: [],
