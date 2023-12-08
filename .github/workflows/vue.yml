@@ -3,7 +3,7 @@ name: Deploy Vue.js site to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["VueJS"]
+    branches: "main"
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
