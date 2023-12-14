@@ -7,18 +7,20 @@ useHead({
 </script>
 
 <template>
-  <nav class="mb-4 border-b p-5 bg-slate-50">
-    <div class="max-w-7xl mx-auto space-x-4 flex items-center">
+  <nav class="mb-4 p-5 font-[Inter]">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
       <NuxtLink to="/">
-        <img
-          src="/favicon-32x32.png"
-          alt="Logo"
-          class="w-8 h-8 inline-block mr-3" />
+        <h1 class="font-[Kurale] text-2xl xl:text-5xl text-gray-900">
+          Claes Nymand Nilsson
+        </h1>
       </NuxtLink>
-      <NuxtLink to="/photography">Photography</NuxtLink>
+      <div class="space-x-5">
+        <NuxtLink to="/">Home</NuxtLink>
+        <NuxtLink to="/photography">Photography</NuxtLink>
+      </div>
     </div>
   </nav>
-  <main class="p-5">
+  <main class="p-5 font-[Inter]">
     <NuxtPage />
   </main>
 </template>
