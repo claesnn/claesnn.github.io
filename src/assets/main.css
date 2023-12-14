@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Inter Variable";
+  src: url("./Inter-Variable.ttf") format("truetype-variations");
+}
+
+@font-face {
+  font-family: "Hedvig Variable";
+  src: url("./Hedvig-Variable.ttf") format("truetype-variations");
+}

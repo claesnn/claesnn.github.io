@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      literata: ["Literata Variable", "serif"],
+      hedvig: ["Hedvig Variable", "serif"],
       inter: ["Inter Variable", "sans-serif"],
     },
   },

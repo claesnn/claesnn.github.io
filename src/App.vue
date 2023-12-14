@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router"
 import HelloWorld from "./components/HelloWorld.vue"
-import "@fontsource-variable/inter"
-import "@fontsource-variable/literata"
 </script>
 
 <template>
@@ -16,7 +14,7 @@ import "@fontsource-variable/literata"
         height="125" />
 
       <div class="wrapper">
-        <h1 class="font-literata text-6xl antialiased">
+        <h1 class="font-hedvig text-6xl antialiased">
           Vue 3 + Vite + TypeScript
         </h1>
         <HelloWorld msg="You did it!" />
