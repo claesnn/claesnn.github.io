@@ -1,3 +1,11 @@
+<script setup lang="ts">
+useHead({
+  htmlAttrs: {
+    lang: "en",
+  },
+})
+</script>
+
 <template>
   <nav class="mb-4 border-b p-5 bg-slate-50">
     <div class="max-w-7xl mx-auto space-x-4">
