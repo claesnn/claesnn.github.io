@@ -1,9 +1,13 @@
 <template>
-  <div class="p-5">
-    <nav class="space-x-3">
-      <NuxtLink to="/">Home</NuxtLink>
-      <NuxtLink to="/photography">Photography</NuxtLink>
+  <div class="">
+    <nav class="mb-4 border-b p-5 bg-slate-50">
+      <div class="mx-w-7xl mx-auto space-x-4">
+        <NuxtLink to="/">Home</NuxtLink>
+        <NuxtLink to="/photography">Photography</NuxtLink>
+      </div>
     </nav>
-    <NuxtPage />
+    <main class="p-5">
+      <NuxtPage />
+    </main>
   </div>
 </template>

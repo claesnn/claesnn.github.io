@@ -1,5 +1,7 @@
 <template>
-  <h1 class="text-8xl font-bold text-center text-gray-800 mb-8">Photography</h1>
+  <h1 class="text-5xl lg:text-8xl font-bold text-center text-gray-800 mb-8">
+    Photography
+  </h1>
   <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-3 max-w-7xl mx-auto">
     <NuxtImg
       src="/images/DSC00741.jpg"
