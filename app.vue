@@ -4,9 +4,26 @@ useHead({
     lang: "en",
   },
 })
+
+const route = useRoute()
+const isHome = ref(true)
+
+watch(
+  () => route.path,
+  () => (isHome.value = route.path === "/"),
+)
 </script>
 
 <template>
+  <div class="min-h-screen w-full -z-10 absolute top-0 left-0">
+    <NuxtImg
+      v-if="isHome"
+      src="/images/DSCF6640.jpg"
+      format="webp"
+      loading="lazy"
+      :placeholder="[6240, 4160, 40, 0]"
+      width="100%" />
+  </div>
   <nav class="mb-4 p-5 font-[Inter]">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       <NuxtLink to="/">
