@@ -18,6 +18,7 @@ const images = Object.entries(imagesSource).map((image, key) => {
       format="webp"
       loading="lazy"
       class="h-min w-full"
-      width="600" />
+      width="600"
+      height="auto" />
   </div>
 </template>
