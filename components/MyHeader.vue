@@ -11,7 +11,7 @@ const images = Object.entries(imagesSource).map((image, key) => {
 
 <template>
   <div
-    class="columns-1 md:columns-2 xl:columns-3 gap-1 max-w-7xl space-y-1 mx-auto">
+    class="columns-1 md:columns-2 lg:columns-3 xl:columns-4 gap-2 space-y-2 mx-auto lg:mt-5">
     <NuxtImg
       v-for="image in images"
       :src="image"
