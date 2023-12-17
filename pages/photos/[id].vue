@@ -9,7 +9,7 @@ const image = route.params.id
       :src="image + '.jpg'"
       format="webp"
       loading="lazy"
-      class="mx-auto max-h-[calc(100vh-120px)]"
+      class="mx-auto max-h-[calc(100vh-150px)]"
       fit="inside"
       sizes="sm:800px md:1000px lg:1200px" />
   </div>
