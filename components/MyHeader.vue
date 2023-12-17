@@ -15,7 +15,7 @@ import images from "@/data/getImages.server"
         format="webp"
         loading="lazy"
         fit="cover"
-        width="600" />
+        sizes="600" />
     </NuxtLink>
   </div>
 </template>

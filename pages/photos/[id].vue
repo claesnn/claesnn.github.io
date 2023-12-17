@@ -10,7 +10,7 @@ const image = route.params.id
       format="webp"
       loading="lazy"
       class="mx-auto max-h-[calc(100vh-150px)]"
-      fit="inside"
-      sizes="sm:800px md:1000px lg:1200px" />
+      fit="cover"
+      sizes="1200" />
   </div>
 </template>
