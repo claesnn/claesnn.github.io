@@ -4,7 +4,7 @@ const image = route.params.id
 </script>
 
 <template>
-  <div class="flex">
+  <Container>
     <NuxtImg
       :src="image + '.jpg'"
       format="webp"
@@ -12,5 +12,5 @@ const image = route.params.id
       class="mx-auto max-h-[calc(100vh-150px)]"
       fit="cover"
       sizes="1200" />
-  </div>
+  </Container>
 </template>

@@ -51,6 +51,7 @@ useHead({
       <div class="space-x-5">
         <NuxtLink to="/">Home</NuxtLink>
         <NuxtLink to="/photography">Photography</NuxtLink>
+        <NuxtLink to="/blogs">Blogs</NuxtLink>
       </div>
     </div>
   </nav>
