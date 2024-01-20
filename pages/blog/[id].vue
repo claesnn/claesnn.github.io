@@ -5,6 +5,11 @@ const blog = route.params.id
 
 <template>
   <Container>
-    {{ blog }}
+    <ContentDoc v-slot="{ doc }">
+      <article>
+        <h1 class="font-[Kurale] text-5xl mb-4">{{ doc.title }}</h1>
+        <ContentRenderer :value="doc" />
+      </article>
+    </ContentDoc>
   </Container>
 </template>

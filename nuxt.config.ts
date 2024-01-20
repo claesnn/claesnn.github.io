@@ -9,5 +9,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxt/image",
     ["@nuxtjs/google-fonts", { families: { Inter: true, Kurale: true } }],
+    "@nuxtjs/sitemap",
+    "@nuxt/content",
   ],
 })
