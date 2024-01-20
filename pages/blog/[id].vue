@@ -7,7 +7,13 @@ const blog = route.params.id
   <Container>
     <ContentDoc v-slot="{ doc }">
       <article>
-        <h1 class="font-[Kurale] text-5xl mb-4">{{ doc.title }}</h1>
+        <h1 class="font-[Kurale] xl:text-8xl lg:text-6xl text-4xl mb-4">
+          {{ doc.title }}
+        </h1>
+        <h2
+          class="font-[Kurale] xl:text-3xl lg:text-2xl text-xl mb-4 text-slate-700">
+          {{ doc.description }}
+        </h2>
         <ContentRenderer :value="doc" />
       </article>
     </ContentDoc>
