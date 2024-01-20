@@ -1,9 +1,14 @@
 <script setup lang="ts">
 const count = ref(0)
-const increment = () => count.value++
 
 const x = ref(0)
 const y = ref(0)
+
+const increment = () => {
+  count.value++
+  x.value += 60 - Math.floor(Math.random() * 120)
+  y.value += 60 - Math.floor(Math.random() * 120)
+}
 
 const newPosition = (event: MouseEvent) => {
   console.log(event.offsetX, event.offsetY)
