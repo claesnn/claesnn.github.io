@@ -49,9 +49,21 @@ useHead({
         </h1>
       </NuxtLink>
       <div class="space-x-5">
-        <NuxtLink to="/">Home</NuxtLink>
-        <NuxtLink to="/photography">Photography</NuxtLink>
-        <NuxtLink to="/blogs">Blogs</NuxtLink>
+        <NuxtLink
+          to="/"
+          class="hover:underline"
+          >Home</NuxtLink
+        >
+        <NuxtLink
+          to="/photography"
+          class="hover:underline"
+          >Photography</NuxtLink
+        >
+        <NuxtLink
+          to="/blogs"
+          class="hover:underline"
+          >Blogs</NuxtLink
+        >
       </div>
     </div>
   </nav>
