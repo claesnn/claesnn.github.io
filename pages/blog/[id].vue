@@ -14,7 +14,9 @@ const blog = route.params.id
           class="font-[Kurale] xl:text-3xl lg:text-2xl text-xl mb-4 text-slate-700">
           {{ doc.description }}
         </h2>
-        <ContentRenderer :value="doc" />
+        <ContentRenderer
+          class="space-y-2"
+          :value="doc" />
       </article>
     </ContentDoc>
   </Container>

@@ -4,3 +4,9 @@ description: My story of wrapping my head around learning the expansive world of
 ---
 
 This is my first md blog
+
+
+
+And this is a javascript counter :)
+
+::Counter
