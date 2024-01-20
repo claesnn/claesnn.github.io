@@ -1,4 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+function formatDate(date: string) {
+  return new Date(date).toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+  })
+}
+</script>
 
 <template>
   <Container>
@@ -6,15 +13,18 @@
       path="/blog"
       v-slot="{ list }">
       <div
-        class="mb-6 space-y-1"
+        class="mb-8"
         v-for="blog in list"
         :key="blog._path">
-        <h2 class="font-[Kurale] text-3xl">{{ blog.title }}</h2>
-        <p>{{ blog.description }}</p>
-        <p>
+        <span class="uppercase text-xs text-slate-400">{{
+          formatDate(blog.createdAt)
+        }}</span>
+        <h2 class="font-[Kurale] text-3xl mb-2">{{ blog.title }}</h2>
+        <p class="mb-2">{{ blog.description }}</p>
+        <p class="text-sm">
           <NuxtLink
             :to="blog._path"
-            class="uppercase text-sm font-bold text-slate-700"
+            class="uppercase font-bold text-slate-700 mr-2"
             >Read more</NuxtLink
           >
         </p>
