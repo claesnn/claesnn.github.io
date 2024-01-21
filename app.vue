@@ -73,7 +73,7 @@ useHead({
 </template>
 
 <style scoped>
-.router-link-exact-active {
+.router-link-active {
   @apply underline;
 }
 </style>

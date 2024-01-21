@@ -23,7 +23,7 @@ function formatDate(date: string) {
         :key="blog._path">
         <hr
           v-if="index !== 0"
-          class="border-slate-150 my-5" />
+          class="border-slate-200 my-5" />
         <NuxtLink :to="blog._path">
           <span class="uppercase text-xs text-slate-400">{{
             formatDate(blog.createdAt)
